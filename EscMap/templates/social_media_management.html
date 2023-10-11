@@ -1,4 +1,121 @@
 {% extends base_template|default:'homepage.html' %}
+{% load static %}
 {% block content %}
+<section id="clients" class="scrollto clearfix">
+            <div class="row clearfix">
+
+                <div class="col-3">
+
+                    <div class="section-heading">
+                        <h3>TRUST</h3>
+                        <h2 class="section-title">Social Media Management</h2>
+                        <p class="section-subtitle">Social media marketing este o strategie digitala prin care afacerile si brandurile utilizeaza platformele de socializare pentru a-si promova produsele, serviciile si mesajele catre o audienta tinta</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+</section>
+<div id="services" class="scrollto clearfix">
+
+            <div class="row no-padding-bottom clearfix">
+
+
+                <!--Content Left Side-->
+                <div class="col-3">
+                    <!--User Testimonial-->
+                    <blockquote class="testimonial text-right bigtest">
+                        <q>Cel mai bun moment pentru a incepe sa iti cresti afacerea este chiar acum</q>
+
+                    </blockquote>
+                    <!-- End of Testimonial-->
+
+                </div>
+                <!--End Content Left Side-->
+
+                <!--Content of the Right Side-->
+                <div class="col-3">
+                    <div class="section-heading">
+
+                        <h2 class="section-title">Tipuri De Reclame pe Retelele Sociale</h2>
+                        <p class="section-subtitle">Facebook Ads sunt o modalitate eficienta si flexibila de a promova produsele, serviciile si mesajele afacerii tale pe una dintre cele mai mari si mai populare platforme de socializare din lume, ajutand astfel la atingerea obiectivelor de marketing si la cresterea afacerii</p>
+                    </div>
+                    <p>Cu ajutorul TikTok Ads, afacerile pot sa capitalizeze pe aceasta retea sociala si sa atinga o audienta dinamica si angajata prin intermediul continutului video</p>
+                    <p>
+                        LinkedIn Ads pot fi o modalitate puternica de a construi relatii in mediul B2B, de a creste constientizarea despre brand si de a genera leads sau vanzari in functie de obiectivele dumneavoastra de afaceri
+                    </p>
+                    <p>
+                        Instagram Ads au devenit o parte importanta a strategiilor de marketing digital, in special pentru brandurile care doresc sa ajunga la o audienta mai tanara si sa se conecteze prin intermediul continutului vizual atractiv
+                    </p>
+                    <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
+                    <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
+                        Contacteza-ne <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!--End Content Right Side-->
+
+                <div class="col-3">
+                    <img src="{% static 'images/social_media_management_banner.jpg' %}" alt="Dancer"/>
+                </div>
+
+            </div>
+
+
+</div>
+<section id="about" class="introduction scrollto">
+
+            <div class="row clearfix">
+
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>SUCCESS</h3>
+                        <h2 class="section-title">Social Media Marketing in 4 pasi</h2>
+                        <p class="section-subtitle"></p>
+                    </div>
+
+                </div>
+                 <div class="col-2-2">
+
+                    <a href="#" class="col-4">
+                        <img src="{% static 'images/steps/1.jpg' %}" alt="Company"/>
+                        <div class="client-overlay"><span>Tree</span></div>
+                        <div class="icon-block-description">
+                            <h4 align="center">Analiza nisei si a competitiei
+                                </h4>
+                        </div>
+                    </a>
+                    <a href="#" class="col-4">
+                        <img src="{% static 'images/steps/2.jpg' %}" alt="Company"/>
+                        <div class="client-overlay"><span>Tree</span></div>
+                        <div class="icon-block-description">
+                            <h4 align="center">Creare strategie de promovare</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="col-4">
+                        <img src="{% static 'images/steps/3.jpg' %}" alt="Company"/>
+                        <div class="client-overlay"><span>Tree</span></div>
+                        <div class="icon-block-description">
+                            <h4 align="center" >Creare si implementare campanii</h4>
+                        </div>
+                    </a>
+                    <a href="#" class="col-4">
+                        <img src="{% static 'images/steps/4.jpg' %}" alt="Company"/>
+                        <div class="client-overlay"><span>Tree</span></div>
+                        <div class="icon-block-description">
+                            <h4 align="center">Raportare si optimizare</h4>
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+        </div>
+
+
+</section>
+
+
 
 {% endblock content %}

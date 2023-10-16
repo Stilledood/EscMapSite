@@ -73,6 +73,16 @@
         items: 1
     });
 
+     $(".screen-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        loop: true,
+        dots: true,
+        items: 1
+    });
+
+
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({

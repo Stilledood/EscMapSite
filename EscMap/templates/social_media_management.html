@@ -1,6 +1,7 @@
 {% extends base_template|default:'homepage.html' %}
 {% load static %}
 {% block content %}
+
 <section id="clients" class="scrollto clearfix">
             <div class="row clearfix">
 
@@ -11,31 +12,35 @@
                             <p class="mb-4">Social media marketing este o strategie digitala prin care afacerile si brandurile utilizeaza platformele de socializare pentru a-si promova produsele, serviciile si mesajele catre o audienta tinta. Acest domeniu se bazeaza pe utilizarea retelelor sociale precum Facebook, Instagram, Tik Tok, LinkedIn, Pinterest si altele pentru a atinge obiectivele de marketing si a construi relatii cu clientii</p>
                         </div>
                 </div>
-                <div class="col-2-3">
-                    <div class="col-3" style="position:absolute; left:500px;top:112px;">
-                        <div class="col-lg-2 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-2-3" style="position:relative; top:80px;">
 
-                            <h1 class="mb-4">Obiectivele social media management</h1>
-                            <p class="mb-4">Creșterea brandului, angajarea audienței, generarea de leads, vânzări etc.</p>
-                            <p class="mb-4">Exemple de obiective SMART (Specifice, Măsurabile, Atingibile, Realiste, Timp-limitate)</p>
-                            <p class="mb-4">Managementul principalelor rețele de socializare (Facebook, Twitter, Instagram, LinkedIn, TikTok etc.)</p>
-                            <p class="mb-4">Selectarea platformelor potrivite în funcție de publicul țintă</p>
+                    <a href="#" class="col-2">
+
+                        <div id="service_name2" ><span>Webdesign / development</span></div>
+                         <div class="icon-block-description">
+
+                            <h4 align="center" id="service_name">Webdesign / development<br></br></h4>
+                            <p id="service_text" class="section-subtitle" align="left" style="text-transform:lowercase; padding: 10px ; border :2px red">Web design-ul este arta de a crea site-uri web atractive, funcționale și relevante pentru nevoile și obiectivele unei afaceri sau proiect online</p>
                         </div>
-                    </div>
-
-                    <div class="col-lg-5 d-flex justify-content-center justify-content-rg-end wow fadeInUp" data-wow-delay="0.3s" style="position:absolute; left:1000px; top:100px;">
+                    </a>
+                </div>
+                <div class="col-2-3" style="position:absolute; left:400px; top:80px; ">
+                    <div class="col-lg-5 d-flex justify-content-center justify-content-rg-end wow fadeInUp" data-wow-delay="0.3s" style="position:relative;left:500px;">
                         <div class="owl-carousel screenshot-carousel">
-                            <img class="img-fluid" src="{% static 'img/tik.png' %}" alt="">
-                            <img class="img-fluid" src="{% static 'img/insta.png' %}" alt="">
-                            <img class="img-fluid" src="{% static 'img/face.png' %}" alt="">
-                            <img class="img-fluid" src="{% static 'img/twitter.png' %}" alt="">
-                            <img class="img-fluid" src="{% static 'img/youtube.png' %}" alt="">
-                        </div>
+                                <img id="service_image" class="img-fluid" src="{% static 'img/tik.png' %}" alt="">
+
+                            </div>
+
                     </div>
+                </div>
 
 
 
 
+                    </div>
+                </div>
+
+                </div>
 
 
                 </div>
@@ -145,7 +150,34 @@
 
 
 </section>
+<script>
+    i = 1
+    services_names = ['Facebook Ads', 'Tik Tok Ads', 'Linkedin Ads', 'Instagram Ads']
+    services_text = ['Facebook Ads sunt o modalitate eficienta si flexibila de a promova produsele, serviciile si mesajele afacerii tale pe una dintre cele mai mari si mai populare platforme de socializare din lume, ajutand astfel la atingerea obiectivelor de marketing si la cresterea afacerii', 'Cu ajutorul TikTok Ads, afacerile pot sa capitalizeze pe aceasta retea sociala si sa atinga o audienta dinamica si angajata prin intermediul continutului video', 'LinkedIn Ads pot fi o modalitate puternica de a construi relatii in mediul B2B, de a creste constientizarea despre brand si de a genera leads sau vanzari in functie de obiectivele dumneavoastra de afaceri', ' Instagram Ads au devenit o parte importanta a strategiilor de marketing digital, in special pentru brandurile care doresc sa ajunga la o audienta mai tanara si sa se conecteze prin intermediul continutului vizual atractiv']
+    services_images = ["{% static 'img/face.png' %}", "{% static 'img/tik.png' %}", "{% static 'img/insta.png' %}"]
+    image_element = document.getElementById('service_image')
+    service_name = document.getElementById('service_name')
+    service_text = document.getElementById('service_text')
+    service_head = document.getElementById('service_name2')
 
+    function changeTxt() {
+        if (i < 0) {
+            i = services_images.len-1
+        } else if (i > services_images.len-1){
+            i = 0
+        }
+        var service_image = services_images[i]
+        console.log(`${service_image}`)
+
+        image_element.setAttribute('src',service_image)
+        service_name.innerText = services_names[i]
+        service_text.innerText = services_text[i]
+        service_head.innerText = services_names[i]
+
+    }
+    window.onload = changeTxt;
+
+</script>>
 
 
 {% endblock content %}

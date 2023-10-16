@@ -344,6 +344,54 @@ h6,
     margin-top: 80px;
 
 }
+.screenshot-carousel {
+    position: relative;
+    width: 253px;
+    height: 500px;
+    padding: 15px;
+    margin-right: 30px;
+}
+
+/*** New Carousel ***/
+
+.screen-carousel {
+    position: relative;
+    width: 253px;
+    height: 500px;
+    padding: 15px;
+    margin-right: 30px;
+}
+
+.screen-carousel::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../img/phone_frame.png) center center no-repeat;
+    background-size: 253px 500px;
+    z-index: 1;
+}
+
+.screen-carousel .owl-item img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 80px;
+
+}
+.screen-carousel {
+    position: relative;
+    width: 253px;
+    height: 500px;
+    padding: 15px;
+    margin-right: 30px;
+}
+
+
+
+
 
 
 
@@ -373,13 +421,13 @@ h6,
     margin: 0 12px;
     width: 50px;
     height: 50px;
-    display: flex;
+    display: absolute;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
     border-radius: 60px;
-    font-size: 18px;
+    font-size: 12px;
     transition: .5s;
 }
 

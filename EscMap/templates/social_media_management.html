@@ -12,31 +12,32 @@
                             <p class="mb-4">Social media marketing este o strategie digitala prin care afacerile si brandurile utilizeaza platformele de socializare pentru a-si promova produsele, serviciile si mesajele catre o audienta tinta. Acest domeniu se bazeaza pe utilizarea retelelor sociale precum Facebook, Instagram, Tik Tok, LinkedIn, Pinterest si altele pentru a atinge obiectivele de marketing si a construi relatii cu clientii</p>
                         </div>
                 </div>
-                <div class="col-2-3" style="position:relative; top:80px;">
 
-                    <a href="#" class="col-2">
+
+                <div class="col-2-3" style="position:relative; top:90px;">
+
+                    <a class="col-2">
 
                         <div id="service_name2" ><span>Webdesign / development</span></div>
                          <div class="icon-block-description">
 
                             <h4 align="center" id="service_name">Webdesign / development<br></br></h4>
                             <p id="service_text" class="section-subtitle" align="left" style="text-transform:lowercase; padding: 10px ; border :2px red">Web design-ul este arta de a crea site-uri web atractive, funcționale și relevante pentru nevoile și obiectivele unei afaceri sau proiect online</p>
-                        </div>
+                            <h3 id="left_arrow"> &#8592</h3>
+                            <h3 id="right_arrow" style="position:relative; left:120px; top: -60px"> &#8594</h3>
+
+
+                         </div>
                     </a>
                 </div>
                 <div class="col-2-3" style="position:absolute; left:400px; top:80px; ">
                     <div class="col-lg-5 d-flex justify-content-center justify-content-rg-end wow fadeInUp" data-wow-delay="0.3s" style="position:relative;left:500px;">
                         <div class="owl-carousel screenshot-carousel">
                                 <img id="service_image" class="img-fluid" src="{% static 'img/tik.png' %}" alt="">
-
                             </div>
 
                     </div>
                 </div>
-
-
-
-
                     </div>
                 </div>
 
@@ -51,7 +52,7 @@
             </div>
 </section>
 
-<div id="services" class="scrollto clearfix">
+<div id="services" >
 
             <div class="row no-padding-bottom clearfix">
 
@@ -153,21 +154,24 @@
 <script>
     i = 1
     services_names = ['Facebook Ads', 'Tik Tok Ads', 'Linkedin Ads', 'Instagram Ads']
+    console.log(services_names.length)
     services_text = ['Facebook Ads sunt o modalitate eficienta si flexibila de a promova produsele, serviciile si mesajele afacerii tale pe una dintre cele mai mari si mai populare platforme de socializare din lume, ajutand astfel la atingerea obiectivelor de marketing si la cresterea afacerii', 'Cu ajutorul TikTok Ads, afacerile pot sa capitalizeze pe aceasta retea sociala si sa atinga o audienta dinamica si angajata prin intermediul continutului video', 'LinkedIn Ads pot fi o modalitate puternica de a construi relatii in mediul B2B, de a creste constientizarea despre brand si de a genera leads sau vanzari in functie de obiectivele dumneavoastra de afaceri', ' Instagram Ads au devenit o parte importanta a strategiilor de marketing digital, in special pentru brandurile care doresc sa ajunga la o audienta mai tanara si sa se conecteze prin intermediul continutului vizual atractiv']
     services_images = ["{% static 'img/face.png' %}", "{% static 'img/tik.png' %}", "{% static 'img/insta.png' %}"]
     image_element = document.getElementById('service_image')
     service_name = document.getElementById('service_name')
     service_text = document.getElementById('service_text')
     service_head = document.getElementById('service_name2')
+    left_arrow = document.getElementById('left_arrow')
+    right_arrow = document.getElementById('right_arrow')
 
     function changeTxt() {
         if (i < 0) {
-            i = services_images.len-1
+            i = services_images.length-1
         } else if (i > services_images.len-1){
             i = 0
         }
         var service_image = services_images[i]
-        console.log(`${service_image}`)
+
 
         image_element.setAttribute('src',service_image)
         service_name.innerText = services_names[i]
@@ -176,6 +180,13 @@
 
     }
     window.onload = changeTxt;
+    function change_left(){
+        i = i- 1;
+        console.log(i)
+        changeTxt();
+    }
+
+    left_arrow.addEventListener("click", change_left)
 
 </script>>
 

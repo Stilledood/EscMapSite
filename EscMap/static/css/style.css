@@ -389,6 +389,17 @@ section {
     border-width: 3px;
     border-style: solid;
 }
+.button-create {
+    font-size: 16px;
+    margin: 35px 0;
+    padding: 11px 16px;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid;
+}
 
 /* Play Button */
 
@@ -1578,11 +1589,7 @@ blockquote {
     text-align: center;
 }
 
-/*!
- * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
- * Copyright 2015 Daniel Cardoso <@DanielCardoso>
- * Licensed under MIT
- */
+
 .la-ball-triangle-path,
 .la-ball-triangle-path > div {
     position: relative;
@@ -2127,6 +2134,9 @@ blockquote {
     }
     .section-heading {
         display: none;
+    }
+    .button-create{
+        display:none;
     }
 
     /*-----------------Header Elements-----------------*/

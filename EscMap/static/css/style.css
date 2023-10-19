@@ -2125,6 +2125,9 @@ blockquote {
         padding-right: 0;
         padding-left: 0;
     }
+    .section-heading {
+        display: none;
+    }
 
     /*-----------------Header Elements-----------------*/
     #header .row {
@@ -2152,6 +2155,9 @@ blockquote {
 
     #banner-content.row {
         padding-top: 85px !important;
+    }
+      #section-heading {
+        display: hidden;
     }
 
     /*-----------------Sections-----------------*/
@@ -2248,6 +2254,9 @@ blockquote {
     #banner-content.row {
         padding-top: 85px !important;
     }
+      #section-heading {
+        display: hidden;
+    }
 
     /*Navigation*/
     nav#nav-mobile ul {
@@ -2294,6 +2303,7 @@ blockquote {
         padding-top: 45px !important;
     }
 
+
     /*-----------------Header Elements-----------------*/
     #header aside {
         display: inline-block;
@@ -2311,6 +2321,9 @@ blockquote {
     #header aside ul {
         margin-top: 0 !important;
         padding-top: 6px;
+    }
+    #section-heading {
+        display: hidden;
     }
 
     /*Navigation*/

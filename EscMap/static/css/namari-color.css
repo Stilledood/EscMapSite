@@ -125,7 +125,14 @@ a:hover, #header.nav-solid nav a:hover {
 
 #banner {
     background: url("../images/main_banner.jpg") no-repeat center top;
-    background-size:auto;
+    background-size:cover;
+}
+@media (max-width: 480px) {
+    #banner{
+        background: url("../images/main_banner_mobile.jpg") no-repeat right top ;
+        background-size:cover;
+
+    }
 }
 
 
@@ -327,4 +334,5 @@ h6 {
 #landing-footer i {
     color:#999;
 }
+
 

@@ -18,7 +18,7 @@
 
                     <a class="col-2">
 
-                        <div id="service_name2" ><span>Webdesign / development</span></div>
+                        <div id="service_name2" ><span>Social Media Marketing</span></div>
                          <div class="icon-block-description">
 
                             <h4 align="center" id="service_name">Webdesign / development<br></br></h4>
@@ -27,10 +27,10 @@
                          </div>
                     </a>
                 </div>
-                <div class="col-2-3" style="position:absolute; left:400px; top:80px; ">
+                <div class="col-2-3" style="position:absolute; left:400px; top:50px; ">
                     <div class="col-lg-5 d-flex justify-content-center justify-content-rg-end wow fadeInUp" data-wow-delay="0.3s" style="position:relative;left:500px;">
                         <div class="owl-carousel screenshot-carousel">
-                                <img id="service_image" class="img-fluid" src="{% static 'img/tik.png' %}" alt="">
+                                <img id="service_image" class="img-fluid" src="{% static 'img/tik.png' %}" alt="" style="position:relative;top:-10px;">
                         </div>
                     </div>
 
@@ -71,15 +71,15 @@
                 <div class="col-3">
                     <div class="section-heading">
 
-                        <h2 class="section-title">Tipuri De Reclame pe Retelele Sociale</h2>
-                        <p class="section-subtitle">Facebook Ads sunt o modalitate eficienta si flexibila de a promova produsele, serviciile si mesajele afacerii tale pe una dintre cele mai mari si mai populare platforme de socializare din lume, ajutand astfel la atingerea obiectivelor de marketing si la cresterea afacerii</p>
+                        <h2 class="section-title">Ce este Social Media Marketing</h2>
+                        <p class="section-subtitle">Crearea de conținut de calitate: Companiile produc și împărtășesc conținut, precum postări, imagini, videoclipuri, bloguri etc., care sunt interesante și utile pentru publicul țintă. Acest conținut poate include informații despre produse sau servicii, sfaturi, povestiri, sau orice altceva care să genereze interes</p>
                     </div>
-                    <p class="section-subtitle">Cu ajutorul TikTok Ads, afacerile pot sa capitalizeze pe aceasta retea sociala si sa atinga o audienta dinamica si angajata prin intermediul continutului video</p>
+                    <p class="section-subtitle">Interacțiunea cu publicul: Social media oferă oportunități de a comunica direct cu clienții sau potențialii clienți. Comentariile, întrebările și feedback-ul pot fi gestionate rapid și eficient</p>
                     <p class="section-subtitle">
-                        LinkedIn Ads pot fi o modalitate puternica de a construi relatii in mediul B2B, de a creste constientizarea despre brand si de a genera leads sau vanzari in functie de obiectivele dumneavoastra de afaceri
+                        Publicitate plătită: Multe platforme sociale oferă opțiuni de publicitate plătită, cum ar fi reclame pe Facebook, Instagram sau LinkedIn. Aceasta permite companiilor să își promoveze conținutul sau să targeteze publicul țintă în mod specific
                     </p>
                     <p class="section-subtitle">
-                        Instagram Ads au devenit o parte importanta a strategiilor de marketing digital, in special pentru brandurile care doresc sa ajunga la o audienta mai tanara si sa se conecteze prin intermediul continutului vizual atractiv
+                       Construirea și consolidarea brandului: Social media marketingul ajută la crearea și consolidarea identității de brand, precum și la creșterea conștientizării brandului în rândul publicului țintă
                     </p>
                     <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
                     <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
@@ -174,7 +174,7 @@
     services_names = ['Facebook Ads', 'Tik Tok Ads', 'Linkedin Ads', 'Instagram Ads']
     console.log(services_names.length)
     services_text = ['Facebook Ads sunt o modalitate eficienta si flexibila de a promova produsele, serviciile si mesajele afacerii tale pe una dintre cele mai mari si mai populare platforme de socializare din lume, ajutand astfel la atingerea obiectivelor de marketing si la cresterea afacerii', 'Cu ajutorul TikTok Ads, afacerile pot sa capitalizeze pe aceasta retea sociala si sa atinga o audienta dinamica si angajata prin intermediul continutului video', 'LinkedIn Ads pot fi o modalitate puternica de a construi relatii in mediul B2B, de a creste constientizarea despre brand si de a genera leads sau vanzari in functie de obiectivele dumneavoastra de afaceri', ' Instagram Ads au devenit o parte importanta a strategiilor de marketing digital, in special pentru brandurile care doresc sa ajunga la o audienta mai tanara si sa se conecteze prin intermediul continutului vizual atractiv']
-    services_images = ["{% static 'img/face.png' %}", "{% static 'img/tik.png' %}", "{% static 'img/insta.png' %}"]
+    services_images = ["{% static 'img/facebook.png' %}", "{% static 'img/tik.png' %}", "{% static 'img/linkedin.png' %}", "{% static 'img/instagram.png' %}"]
     image_element = document.getElementById('service_image')
     service_name = document.getElementById('service_name')
     service_text = document.getElementById('service_text')
@@ -185,7 +185,7 @@
     function changeTxt() {
         if (i < 0) {
             i = services_images.length-1
-        } else if (i > services_images.len-1){
+        } else if (i >= services_images.len-1){
             i = 0
         }
         var service_image = services_images[i]
